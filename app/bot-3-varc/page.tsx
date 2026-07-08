@@ -79,7 +79,7 @@ export default function VARCPage() {
         <div className="mt-12">
           <h2 className="text-2xl font-bold text-foreground mb-6">Learn the Strategy</h2>
           
-          <Accordion value={activeStep} onValueChange={setActiveStep} type="single" collapsible className="space-y-3">
+          <Accordion value={activeStep} onValueChange={setActiveStep} type="single" className="space-y-3">
             <AccordionItem value="step-1" className="border border-border rounded-lg px-6 data-[state=open]:bg-emerald-50/50">
               <AccordionTrigger className="hover:no-underline py-4">
                 <div className="flex items-center gap-4 text-left">
