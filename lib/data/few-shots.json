@@ -1,0 +1,83 @@
+{
+  "errorInvestigator": [
+    {
+      "input": "I solved x^2 - 5x + 6 = 0. I got roots as x = -2 and -3. But the answer key says 2 and 3. Where did I go wrong?",
+      "output": {
+        "mistakeType": "Silly",
+        "tagReason": "The user factored correctly as (x-2)(x-3) = 0 but made a sign error when solving for x, stating roots are -2 and -3.",
+        "steps": [
+          {
+            "title": "Peek 1: Equation Structure",
+            "content": "The equation is x^2 - 5x + 6 = 0. To factor this, we need two numbers that multiply to +6 and add to -5."
+          },
+          {
+            "title": "Peek 2: Factoring Steps",
+            "content": "Those numbers are -2 and -3. So the equation factors as: (x - 2)(x - 3) = 0."
+          },
+          {
+            "title": "Peek 3: Finding Roots",
+            "content": "For the product to be zero, either (x - 2) = 0 or (x - 3) = 0. Solving these gives x = 2 and x = 3. You likely wrote down the factored terms (-2, -3) as the final roots without changing signs!"
+          }
+        ]
+      }
+    },
+    {
+      "input": "A train passes a pole in 15 seconds at 60 km/h. How long is the train? I did 60 * 15 = 900 meters but that's wrong.",
+      "output": {
+        "mistakeType": "Concept Gap",
+        "tagReason": "The user did not convert the speed unit from km/h to m/s before multiplying by the time in seconds.",
+        "steps": [
+          {
+            "title": "Peek 1: Verify Units",
+            "content": "The time is in seconds (15s), but the speed is in km/h (60 km/h). You cannot multiply them directly without converting one of them."
+          },
+          {
+            "title": "Peek 2: Convert Speed",
+            "content": "To convert km/h to m/s, multiply by 5/18: Speed = 60 * (5/18) = 16.67 m/s (or 50/3 m/s)."
+          },
+          {
+            "title": "Peek 3: Calculate Length",
+            "content": "Distance (train length) = Speed * Time = (50/3 m/s) * 15s = 250 meters. Your direct calculation (900m) missed this crucial unit conversion step!"
+          }
+        ]
+      }
+    }
+  ],
+  "varcCoach": [
+    {
+      "article": "The rapid ascent of generative artificial intelligence has sent shockwaves through the educational landscape. Critics sound alarms about the demise of original writing and critical thinking, warning that student essays will soon be outsourced entirely to machines. Yet, this alarmist view overlooks the historical resilience of pedagogy. Just as the pocket calculator did not destroy mathematics, but rather shifted focus from arithmetic to higher-level reasoning, AI will compel educators to design assignments that value synthesis, voice, and raw human reasoning over formulaic essays.",
+      "output": {
+        "toneAnalysis": {
+          "attitude": "Optimistic and pragmatic",
+          "mainIdea": "Generative AI will not destroy education but will instead push it to evolve to higher levels of critical evaluation.",
+          "analogy": "Like a parent who stops worrying about their teenager using a calculator for simple arithmetic because it lets them focus on learning complex algebra."
+        },
+        "quiz": {
+          "question": "Which of the following best captures the author's stance on the impact of AI in education?",
+          "options": [
+            "A) It poses an existential threat to critical thinking that cannot be mitigated.",
+            "B) It is a passing fad that educators can safely ignore without adapting curriculum.",
+            "C) It will act as a catalyst for educational reform, shifting value to higher-order cognitive skills.",
+            "D) It is superior to pocket calculators because it teaches human reasoning."
+          ],
+          "correctAnswer": "C",
+          "explanation": "The author argues AI will 'compel educators to design assignments that value synthesis, voice, and raw human reasoning' analogous to calculators shifting focus to higher-level math."
+        }
+      }
+    }
+  ],
+  "dilrUntangler": [
+    {
+      "description": "A matrix set with 4 variables: 5 people, 5 cities, 5 professions, and 5 car brands. Clues are given like 'A does not drive a BMW', 'The Doctor lives in Mumbai', etc.",
+      "output": {
+        "verdict": "MAYBE / SKIP (if you have less than 15 mins)",
+        "difficulty": "Hard (4-variable matching matrix)",
+        "strategy": [
+          "1. **Entity Count**: With 5x5x5x5 grid, standard matrix building will take at least 8-10 minutes just to fill.",
+          "2. **Clue Density**: Look at clue 1 and 3. They are negative clues ('does not live in...'). These are harder to map immediately.",
+          "3. **Order of attack**: If you do attempt it, solve Sub-question 3 first ('If B lives in Delhi...') as it adds a local constraint which speeds up elimination for that specific question."
+        ]
+      }
+    }
+  ]
+}

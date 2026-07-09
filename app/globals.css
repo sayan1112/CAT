@@ -161,3 +161,27 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom Markdown Rendering Utilities for Chatbots */
+.markdown-styling h3 {
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  color: #3b82f6; /* Blue-500 equivalent */
+}
+
+.markdown-styling h3:first-of-type {
+  margin-top: 0.1rem;
+}
+
+.markdown-styling ul {
+  margin-bottom: 0.5rem;
+}
+
+.markdown-styling li {
+  margin-bottom: 0.2rem;
+}
+

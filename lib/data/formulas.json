@@ -1,0 +1,93 @@
+[
+  {
+    "id": "tsd-average-speed",
+    "topic": "Time, Speed & Distance",
+    "formula": "Average Speed = 2xy / (x + y)",
+    "description": "Used when a journey is split into two equal distance segments traveled at speeds x and y.",
+    "keyInsight": "The average speed is the harmonic mean of the individual speeds, not the arithmetic mean. If the segments are equal time, then average speed is (x + y)/2."
+  },
+  {
+    "id": "tsd-relative-speed",
+    "topic": "Time, Speed & Distance",
+    "formula": "Relative Speed = x + y (opposite direction) | x - y (same direction)",
+    "description": "Applies when two bodies are moving relative to each other.",
+    "keyInsight": "Add speeds if moving towards/away from each other. Subtract if one is chasing the other."
+  },
+  {
+    "id": "work-efficiency",
+    "topic": "Time & Work",
+    "formula": "1/A + 1/B = 1/T",
+    "description": "If A takes 'a' days and B takes 'b' days, working together they take T days.",
+    "keyInsight": "Work done is inversely proportional to time taken. Represent rates of work per day as fractions."
+  },
+  {
+    "id": "algebra-quadratics",
+    "topic": "Algebra",
+    "formula": "Sum of roots = -b/a | Product of roots = c/a",
+    "description": "For any quadratic equation ax^2 + bx + c = 0.",
+    "keyInsight": "Discriminant D = b^2 - 4ac determines root nature: D > 0 (real & distinct), D = 0 (real & equal), D < 0 (complex)."
+  },
+  {
+    "id": "algebra-logarithms",
+    "topic": "Algebra",
+    "formula": "log_a(x * y) = log_a(x) + log_a(y) | log_a(x/y) = log_a(x) - log_a(y)",
+    "description": "Fundamental properties of logarithms.",
+    "keyInsight": "Base change theorem: log_a(b) = log_c(b) / log_c(a). Crucial for algebraic simplifications."
+  },
+  {
+    "id": "ap-sum",
+    "topic": "Progressions",
+    "formula": "S_n = (n/2) * [2a + (n - 1)d]",
+    "description": "Sum of first n terms of an Arithmetic Progression.",
+    "keyInsight": "Can also be written as n * (First term + Last term) / 2. The average of terms is the middle term."
+  },
+  {
+    "id": "gp-sum-infinite",
+    "topic": "Progressions",
+    "formula": "S_inf = a / (1 - r) (for |r| < 1)",
+    "description": "Sum of an infinite Geometric Progression.",
+    "keyInsight": "If common ratio r is not fractional (|r| >= 1), the sum diverges to infinity."
+  },
+  {
+    "id": "geometry-herons",
+    "topic": "Geometry",
+    "formula": "Area = sqrt(s * (s - a) * (s - b) * (s - c)) where s = (a + b + c) / 2",
+    "description": "Heron's formula for the area of any triangle given its three side lengths.",
+    "keyInsight": "Useful when heights are not given, but side lengths are known integers (Heronian triangles)."
+  },
+  {
+    "id": "geometry-polygon-angles",
+    "topic": "Geometry",
+    "formula": "Sum of interior angles = (n - 2) * 180°",
+    "description": "For any convex n-sided polygon.",
+    "keyInsight": "Sum of exterior angles is always 360° regardless of the number of sides."
+  },
+  {
+    "id": "numbers-euler-totient",
+    "topic": "Number Systems",
+    "formula": "phi(N) = N * (1 - 1/p1) * (1 - 1/p2)... where p1, p2 are prime factors",
+    "description": "Euler's totient function counts numbers coprime to N up to N.",
+    "keyInsight": "If a is coprime to N, then a^(phi(N)) mod N = 1 (Euler's theorem). Simplifies massive exponents in remainders."
+  },
+  {
+    "id": "numbers-unit-digit",
+    "topic": "Number Systems",
+    "formula": "Cyclicity of unit digits: 2, 3, 7, 8 have cyclicity of 4 | 4, 9 have cyclicity of 2 | 0, 1, 5, 6 have cyclicity of 1",
+    "description": "Finding the last digit of any number raised to a large power.",
+    "keyInsight": "Divide the exponent by the cyclicity. The remainder gives the power step. If remainder is 0, use cyclicity itself."
+  },
+  {
+    "id": "modern-permutations",
+    "topic": "Modern Math",
+    "formula": "nCr = n! / (r! * (n - r)!)",
+    "description": "Number of ways to select r items from a set of n distinct items.",
+    "keyInsight": "nCr = nC(n-r). Remember that order of selection does not matter in combinations."
+  },
+  {
+    "id": "modern-circular-permutation",
+    "topic": "Modern Math",
+    "formula": "Arrangements = (n - 1)!",
+    "description": "Number of ways to arrange n distinct objects along a circle.",
+    "keyInsight": "If clockwise and counter-clockwise arrangements are considered identical (like a necklace), it is (n - 1)! / 2."
+  }
+]
